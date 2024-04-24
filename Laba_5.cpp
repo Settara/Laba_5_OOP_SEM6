@@ -24,7 +24,7 @@ int main()
     //Создаем систему управления теплицей
     IGMS* managmentSystem = new IGMS(1);
     //Cоздаем динамиическую базу данных
-    IDinamicDatabase* dinB = new IDinamicDatabase("Динамическая база данных");
+    IDynamicDatabase* dinB = new IDynamicDatabase("Динамическая база данных");
     //Cоздаем статическую базу данных
     IDatabase* dB = new IDatabase();
     //Cоздаем прокси для базы данных

@@ -3,7 +3,7 @@
 #include "ISensor.h"
 
 //Класс динамической базы данных
-class IDinamicDatabase
+class IDynamicDatabase
 {
 private:
 	string DinamicDatabaseName;	 //Поле хранит имя базы данных
@@ -12,7 +12,7 @@ private:
 	int LightingCurrent;		 //Поле хранит текущее значение освещения 
 
 public:
-	IDinamicDatabase(string DinamicDatabaseName);//Констуктор устанавливает имя базы данных
+	IDynamicDatabase(string DynamicDatabaseName);//Констуктор устанавливает имя базы данных
 	void SetTemperatureCurrent(ISensor* sensor); //Метод опрашивает датчик и устанавливает значения поля TemperatureCurrent
 	void SetHumidityCurrent(ISensor* sensor);	 //Метод опрашивает датчик и устанавливает значения поля HumidityCurrent
 	void SetLightingCurrent(ISensor* sensor);	 //Метод опрашивает датчик и устанавливает значения поля LightingCurrent

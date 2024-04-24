@@ -1,6 +1,6 @@
 #include "IGMS.h"
 
-void IGMS::Management(IDinamicDatabase* DinBase, ProxyDatabase* Database, ISensor* Sensors[NSensors], IAO* Objects[NObjects], IIS* Systems[NSystem], Decorator* Decorators[NDecorators])
+void IGMS::Management(IDynamicDatabase* DinBase, ProxyDatabase* Database, ISensor* Sensors[NSensors], IAO* Objects[NObjects], IIS* Systems[NSystem], Decorator* Decorators[NDecorators])
 {
 	//Создадим счетчик для компановщика 
 	int compositeCounter = 3;

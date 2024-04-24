@@ -1,39 +1,39 @@
 #include "IDynamicDatabase.h"
 
-IDinamicDatabase::IDinamicDatabase(string DinamicDatabaseName)
+IDynamicDatabase::IDynamicDatabase(string DinamicDatabaseName)
 {
 	this->DinamicDatabaseName = DinamicDatabaseName;
 }
 
-void IDinamicDatabase::SetTemperatureCurrent(ISensor* sensor)
+void IDynamicDatabase::SetTemperatureCurrent(ISensor* sensor)
 {
 	sensor->GetInformation();
 	TemperatureCurrent = sensor->GiveInformation();
 }
 
-void IDinamicDatabase::SetHumidityCurrent(ISensor* sensor)
+void IDynamicDatabase::SetHumidityCurrent(ISensor* sensor)
 {
 	sensor->GetInformation();
 	HumidityCurrent = sensor->GiveInformation();
 }
 
-void IDinamicDatabase::SetLightingCurrent(ISensor* sensor)
+void IDynamicDatabase::SetLightingCurrent(ISensor* sensor)
 {
 	sensor->GetInformation();
 	LightingCurrent = sensor->GiveInformation();
 }
 
-int IDinamicDatabase::GetTemperatureCurrent()
+int IDynamicDatabase::GetTemperatureCurrent()
 {
 	return TemperatureCurrent;
 }
 
-int IDinamicDatabase::GetHumidityCurrent()
+int IDynamicDatabase::GetHumidityCurrent()
 {
 	return HumidityCurrent;
 }
 
-int IDinamicDatabase::GetLightingCurrent()
+int IDynamicDatabase::GetLightingCurrent()
 {
 	return LightingCurrent;
 }
