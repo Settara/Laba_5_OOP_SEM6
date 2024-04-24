@@ -5,7 +5,7 @@
 class Peat : public Nutrients
 {
 public:
-	Peat() { NutrientsName = "Peat"; }	//Переопределение конструктора 
+	Peat() { }	//Переопределение конструктора 
 	void Mix() override; //Метод добавляет удобрение в почву
 };
 
